@@ -46,7 +46,7 @@ const App = () => {
     axios.get(url).then((res) => {
       setTimeout(() =>{
         setData(res.data);
-      },0);
+      },1);
     }).catch(err => {
       setErrorMsg(err)
     })
